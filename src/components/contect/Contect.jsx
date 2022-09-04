@@ -14,8 +14,7 @@ const Contect = () => {
     
     emailjs.sendForm('service_ph3l85p', 'template_3gjbo2j', form.current, 'sIoeg3fa0IhpJ8PCu')
       .then((result) => {
-          console.log(result.text);
-          console.log('Sent successfully');
+          alert('Sent successfully');
       }, (error) => {
           console.log(error.text);
           console.log('The message was not sent');
